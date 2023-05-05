@@ -1,0 +1,13 @@
+services:
+  app:
+    container_name: tank_app
+    build:
+      dockerfile: dockerfile
+      context: .
+      network: host
+    command: ["python3", "src/__init__.py"]
+    restart: always
+    ports:
+      - 1138:1138
+    # volumes:
+    #   - tank-data:/app/src/uploads
