@@ -14,7 +14,7 @@ def hello():
     return "Hello World!"
 
 
-@app.route('/model/xgboost1', methods=['GET'])
+@app.route('/model/xgboost1', methods=['POST'])
 def predictXgboost1():
     try:
         # validate file
@@ -60,7 +60,7 @@ def predictXgboost1():
         return res
 
 
-@app.route('/model/xgboost2', methods=['GET'])
+@app.route('/model/xgboost2', methods=['POST'])
 def predictXgboost2():
     try:
        # validate file
@@ -114,7 +114,7 @@ def predictXgboost2():
         return res
 
 
-@app.route('/model/xgboost3', methods=['GET'])
+@app.route('/model/xgboost3', methods=['POST'])
 def predictXgboost3():
     try:
        # validate file
